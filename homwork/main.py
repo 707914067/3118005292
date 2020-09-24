@@ -18,3 +18,6 @@ if __name__ == '__main__':
             f.write('的相似度为' + str(hash1.similarity(hash2)) + '\n')  # 通过数字指纹算出相似值
     except IOError:
         print('Error: 没有找到文件或读取文件失败!')
+    except IndexError:
+        print('Error: 输入参数不够, 需要输入两个读入文件以及一个输出结果文件!')
+        
